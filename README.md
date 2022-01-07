@@ -10,7 +10,7 @@ with twemoji font stack as fallback (only displaying when apple emoji is not ava
 font-family: ... , "Apple Color Emoji", twemoji, "Segoe UI Emoji", "Segoe UI Symbol";
 ```
 
-## test results
+## test results using twemoji font stack option
 
 | Mac – Safari <br/>15.2 (17612.3.6.1.6) | Mac – Edge <br/>96.0.1054.62 (Official build) (arm64) |
 | ---- | ---- |
