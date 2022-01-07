@@ -9,11 +9,12 @@
 <br>
 <br>
 <details open>
-<summary><b>Rendered with <a href="https://github.com/mozilla/twemoji-colr">Twemoji webfont</a></b></summar>
+<summary><b>Rendered with Apple Color Emoji + <a href="https://github.com/mozilla/twemoji-colr">Twemoji webfont</a> fallback</b></summar>
 <p>
 <ul>
-<li>Add this line to your CSS code: <span style="background: #def">@font-face { font-family: emoji; src: url(//xem.github.io/unicode13/Twemoji.ttf) }</span> (use "font-face: emoji" where you need to enable it)
-<li>Cross-browser shadow emoji: <span style="background: #def">.shadow { filter: contrast(0)brightness(0); opacity: .6 }</span>
+<li><pre>.emoji { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", twemoji, "Segoe UI Emoji", "Segoe UI Symbol"; }
+</pre>
+        <li>Cross-browser shadow emoji: <span style="background: #def">.shadow { filter: contrast(0)brightness(0); opacity: .6 }</span>
 <li>Glitchy for font-sizes > 75px (but you can scale them up with <span style="background: #def">transform: scale(2)</span>
 <li>You can click any emoji below to download it in SVG, or simply copy-paste them in your source code
 <li>Enable the CORS Everywhere browser add-on to use this font on localhost
@@ -61,8 +62,8 @@ twemoji.innerHTML = html3;
 
 <style>
 @font-face { font-family: twemoji; src: url(Twemoji.ttf) }
-.emoji { font-family: twemoji }
-body { font-family: arial; }
+.emoji { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", twemoji, "Segoe UI Emoji", "Segoe UI Symbol"; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 table { border-spacing: 0; border-collapse: collapse; border: 1px solid #000; min-height: 25px; margin:  3px 0; }
 th { min-width: 350px; min-height: 30px; text-align: left; font-size: 11px; }
 td { min-width: 30px; min-height: 30px; line-height: 30px; text-align: center; font-size: 1.5rem; }
